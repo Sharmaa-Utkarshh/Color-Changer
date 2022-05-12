@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors Generator</title>
+    <style>
+        .all{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin-top: 12vh;
+        }
+        .head{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+            text-align: center;
+            animation: Glow 5s infinite ;
+        }
+        @keyframes Glow {
+            0%{
+                color: red;
+            }
+            20%{
+                color: yellow;
+            }
+            40%{
+                color: black;
+            }
+            60%{
+                color: white;
+            }
+            80%{
+                color: greenyellow;
+            }
+            100%{
+                color: blue;
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="all">
+    <h1 class="head">Color Changer</h1>
+    <h2 class="head">Click the below button to change the color and also get the color codes for the same</h2>
+    <button id="click">
+        Click here to change color
+    </button>
+    <h3>The color code is # <span id="code">000000</span> </h3>
+
+</div>
+
+    <script src="color.js"></script>
+
+
+</body>
+</html>
